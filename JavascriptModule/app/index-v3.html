@@ -1,0 +1,58 @@
+<!--
+
+Buld for the BCCR-Pluralsight Course for new Web Developers
+
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML5 Test</title>
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/site.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<header>			
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					<ul>
+				</nav>
+				<div><img src="img/nodejs-logo.png" class="bordered-image"></div>
+				<div><strong>About NodeJS</strong></div>
+				
+			</header>		
+			<section id="main">
+				<p><a href="https://nodejs.org/en/">Node.js</a> is a software platform for scalable 
+				<span>server-side</span> and networking applications</p>
+				<form action="http://wilder.azurewebsites.net/echo" method="POST" class="bordered-image simple-form">
+					<label for="searchPhrase">Search Phrase:</label>
+					<input type="text" name="searchPhrase" id="searchPhrase"/><br/>
+					<input type="checkbox" name="useStars" id="useStars" checked="true" />
+					<label for="useStars">Use Stars?</label><br/>
+					<label for="langChoice">Language:</label>
+					<select name="langChoice" id="langChoice">
+						<option>All</option>
+						<option>C#</option>
+						<option>VB</option>
+						<option>Javascript</option>
+						<option selected>Java</option>
+						<option>JQuery</option>
+					</select><br/>
+					<input type="submit" value="search"/>
+				</form>
+				<div id="results" class="bordered-image">
+					Result
+				</div>
+			</section>
+			<footer>
+				&copy; WGQR-BCCR 
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/index-v3.js"></script>
+	</body>
+</html>

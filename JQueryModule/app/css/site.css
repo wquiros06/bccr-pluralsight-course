@@ -1,0 +1,138 @@
+/* site.css */
+
+header, footer {
+	background-color: lightgray;
+	border: solid 1px solid;
+	font-family: 'Times New Roman', serif; 
+}
+
+footer {
+	padding: 10px;
+	border-radius: 3px;	
+}
+
+body {
+	font-family: Segoe UI, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-color: darkgreen;
+}
+
+a {
+	color: darkgreen;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+/* class */
+.bordered-image {
+	border: solid 1px #444;
+	border-radius: 2px;	
+}
+
+/* selector */
+#main {
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	color: #202020;
+	margin: 20px 0;
+	padding: 5px;
+}
+
+
+
+/* relative selectors => fragile, don't use it*/
+/* #main > form > label {
+	font-weight: bold;
+	
+} */
+
+/*
+for any label in any part of 'main' form 
+#main label{
+	font-weight: bold;	
+}
+
+ for any input in any part of 'main' form 
+#main input[type=text],
+#main select {
+	width: 150px;
+}
+
+#main input[type=submit]{
+	background-color: pink;
+	color: white;
+	font-weight: bold;	
+	border-radius: 15px;
+	padding: 3px;
+	margin-top: 5px;
+	
+}
+
+*/
+
+#results {
+	padding: 2px;
+	width: 600;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.simple-form {
+	padding: 2px;
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* fon any label in any part of 'main' form */
+.simple-form label{
+	font-weight: bold;	
+}
+
+/* for any input in any part of 'main' form */
+.simple-form input[type=text],
+.simple-form select {
+	width: 150px;
+}
+
+.simple-form input[type=submit]{
+	background-color: darkgreen;
+	color: white;
+	font-weight: bold;	
+	border-radius: 15px;
+	padding: 3px;
+	margin-top: 5px;
+	
+}
+
+
+.container {
+	width: 989px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 5px;
+}
+
+header nav {
+	float: right;
+	margin-right: 5px;
+}
+
+header nav li {
+	display: inline;
+	margin-right: 5px;	
+}
+
+.result{
+	margin: 5px;
+	border: 1px solid #888;
+}
+
+.result .title{
+	font-weight: bold;
+}
+
+
