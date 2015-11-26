@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Using a CDN with a Fallback</title>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		
+		<script>
+			window.JQuery || document.write("<script src='js/jquery-2.1.4.min.js'><\/script>");
+		</script>
+		
+		<script>
+			$(document).ready(function(){
+				$("#content").html("Script loaded!");
+			}); 
+		</script>
+	</head>
+	<body>
+		<div id="content"></div>
+	<body>
+</html>
